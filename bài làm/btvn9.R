@@ -33,8 +33,8 @@ data$CoapplicantIncome <- NULL
 #khách hàng nữ (Female).
 
 
-male <- sum(data$Gender == "Male" & data$Loan_Status == "y")
-female <- sum(data$Gender == "Female" & data$Loan_Status == "y")
+male <- sum(data$Gender == "Male" & data$Loan_Status == "Y")
+female <- sum(data$Gender == "Female" & data$Loan_Status == "Y")
 
 if (male > female) {
   print("Nam nhiều hơn")
