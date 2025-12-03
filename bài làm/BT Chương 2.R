@@ -1,3 +1,4 @@
+install.packages("Stat2Data")
 
 library(Stat2Data)
 
@@ -18,13 +19,9 @@ library(Stat2Data)
     table1
     
   ## 3 ----
-    pie(table,
-        main = "Tỷ lệ các loài chim theo loại tổ",
-        col = rainbow(length(table)))
-    
-    legend("topleft",
-        legend = names(table),
-        fill = rainbow(length(table)))
+    pie(table1,
+        col = rainbow(length(table1)),
+       )
     
   ## 4 ----
     Location = unique(nest$Location)
